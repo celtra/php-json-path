@@ -18,23 +18,23 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/Oryss/php-unilex"
+      "url": "https://github.com/celtra/php-unilex"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Oryss/php-json-data"
+      "url": "https://github.com/celtra/php-json-data"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Oryss/php-int-rangesets"
+      "url": "https://github.com/celtra/php-int-rangesets"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Oryss/php-ucd"
+      "url": "https://github.com/celtra/php-ucd"
     }
   ],
   "require": {
-    "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
     "ext-intl": "*",
     "ext-json": "*",
     "remorhaz/php-unilex": "dev-master",

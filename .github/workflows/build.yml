@@ -19,6 +19,7 @@ jobs:
           - "8.2"
           - "8.3"
           - "8.4"
+          - "8.5"
         dependencies:
           - lowest
           - highest
@@ -58,10 +59,10 @@ jobs:
 
       - name: Force HTTPS for forked libraries only
         run: |
-          git config --global url."https://github.com/Oryss/php-unilex".insteadOf "git@github.com:Oryss/php-unilex"
-          git config --global url."https://github.com/Oryss/php-json-data".insteadOf "git@github.com:Oryss/php-json-data"
-          git config --global url."https://github.com/Oryss/php-int-rangesets".insteadOf "git@github.com:Oryss/php-int-rangesets"
-          git config --global url."https://github.com/Oryss/php-ucd".insteadOf "git@github.com:Oryss/php-ucd"
+          git config --global url."https://github.com/celtra/php-unilex".insteadOf "git@github.com:celtra/php-unilex"
+          git config --global url."https://github.com/celtra/php-json-data".insteadOf "git@github.com:celtra/php-json-data"
+          git config --global url."https://github.com/celtra/php-int-rangesets".insteadOf "git@github.com:celtra/php-int-rangesets"
+          git config --global url."https://github.com/celtra/php-ucd".insteadOf "git@github.com:celtra/php-ucd"
 
       - name: Install lowest dependencies
         if: ${{ matrix.dependencies == 'lowest' && matrix.platform-reqs == 'use-platform-reqs' }}
